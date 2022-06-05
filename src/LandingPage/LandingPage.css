@@ -1,0 +1,168 @@
+.landing-page-container{
+    background-image: url("./child.jpg");
+
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.landing-page-container .wrapper{
+    background-image: url("./green\ spray.png");
+
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+.landing-page-container .wrapper .content{
+    position: absolute;
+    top: 30%;
+    right: 0;
+
+    width: 50%;
+    padding-right: 5%;
+
+
+}
+.landing-page-container .wrapper .content img{
+    position: absolute;
+    top: 3%;
+    left: 21%;
+    width: 50px;
+}
+.landing-page-container .wrapper .content p{
+    text-align: center;
+    font-family: kepler-std-extended-display, serif;
+   
+}
+
+
+.main-para-intro .very-bold{
+    font-family: kepler-std-display, serif;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 8vh;
+    font-size: 6.5vw;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 100;
+    font-size: 80px;
+}
+.are{
+    font-family: brother-1816, sans-serif !important;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 3vw;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 0.5vw;
+    z-index: 100;
+    margin-bottom: 25px;
+}
+
+.thin-para{
+    font-family: kepler-std-extended-display, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.42vw;
+    color: black;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 5vh;
+    margin: 0 auto;
+    z-index: 100;
+    line-height: 1.7vw;
+}
+.thin-para span{
+font-style: italic;
+}
+
+.long-para-landing-page{
+    font-family: brother-1816, sans-serif !important;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 2.5vh;
+    color: black;
+    line-height: 8vh;
+    text-align: center;
+    margin: 0 auto;
+    z-index: 100;
+}
+.main-para-intro{
+    line-height: 1.5rem;
+}
+
+.content button,
+.content button:hover,
+.content button:focus,
+.content button:focus-visible{
+    text-align: center;
+    border: 3px solid black;
+    background: transparent;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: 12px;
+    padding: 5px 10px;
+    font-family: brother-1816, sans-serif;
+    font-weight: 700;
+    margin: 0 auto;
+    display: block;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .landing-page-container .wrapper .content {
+        position: absolute;
+        top: 30%;
+        right: 0;
+        width: 100%;
+        padding-right: 5%;
+    }
+    .landing-page-container {
+        background-image: none;
+        
+    }
+    .are {
+        
+        font-size: 2rem !important;
+    }
+  }
+
+  .date-top{
+    font-family: kepler-std-extended-display, serif;
+    font-weight: 400 !important;
+    font-style: normal;
+    position: absolute;
+    left: 45%;
+    top: 2%;
+  }
+
+  .date-bottom{
+    font-family: kepler-std-extended-display, serif;
+    font-weight: 400 !important;
+    font-style: normal;
+    position: absolute;
+    right: 4%;
+    bottom: 2%;
+  }
+
+
+  /* Common Components */
+.logo{
+    position: absolute;
+    width: 10%;
+    top: 3%;
+    left: 3%;
+  }
+  
+  .wtf-btn:hover{
+ background-color: #000000;
+ color: white;
+ cursor: pointer;
+  }
+
+  /* Common Components */

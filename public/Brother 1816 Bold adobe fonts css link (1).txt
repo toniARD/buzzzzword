@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="https://use.typekit.net/neh7gar.css">
+
+Brother 1816 Bold
+
+font-family: brother-1816, sans-serif;
+
+font-weight: 700;
+
+font-style: normal;
+

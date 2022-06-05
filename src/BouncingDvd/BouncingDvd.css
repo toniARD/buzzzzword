@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  #black {
+    height: 100vh;
+    width: 100vw;
+    background-color: #111;
+  }
+  
+  #dvd {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 10vh;
+    width: 15vw;
+    mask: url("./honeyfprever3005.svg");
+    -webkit-mask: url("./honeyfprever3005.svg");
+    mask-repeat: no-repeat;
+    /* background-repeat: no-repeat !important; */
+    /* background-size: 100% 100%; */
+    /* background-position: center; */
+  }
+  
+
+
+  .bouncing-float{
+    position: absolute;
+    bottom: 20%;
+    left: 4%;
+
+    opacity: 0.8;
+    color: white;
+
+    border-radius: 15px;
+    padding: 10px 30px;
+  }
+
+  .bouncing-float p {
+    font-family: brother-1816, sans-serif;
+margin: 0px;
+  }
+
+    .bouncing-float h4{
+      font-family: brother-1816, sans-serif;
+      font-weight: 700;
+  }
+
+
+  .wtf-btn.dvd{
+    position: absolute;
+    right: 4%;
+    top: 2%;
+    border: 2px solid white;
+    background: transparent !important;
+    border-radius: 50%;
+    padding: 10px 5px;
+    font-family: brother-1816, sans-serif;
+    font-weight: 900;
+    font-size: 13px;
+    color: #000000;
+    z-index: 10000000000;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+  
+  }
+  .wtf-btn.dvd:hover{
+  color: black;
+    cursor: pointer;
+    background: white;
+    color: white;
+    border: 1px solid white;
+     }
+  
+     .more-btn.dvd{
+       position: absolute;
+       bottom: 2%;
+       right: 2%;
+       font-family: brother-1816, sans-serif;
+       font-weight: 900;
+       font-size: 13px;
+       color: white !important;
+    
+       padding: 2px 15px;
+       border-radius: 25px;
+       border: 2px solid #000000;
+       cursor: pointer;
+       z-index: 10000000000;
+       background-color: transparent;
+       color: #70ff00;
+       border: 2px solid white;
+       background: transparent !important;
+     }
+
+     .more-btn.dvd:hover{
+  background-color: whitesmoke;
+  color: black;
+  border: 2px solid white;
+      }

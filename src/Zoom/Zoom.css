@@ -1,0 +1,31 @@
+.workspace {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    font: 700 12px system-ui;
+  }
+  .zoom-float{
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    background-color: white;
+    opacity: 0.8;
+    color: black;
+    z-index: 100000;
+    border-radius: 15px;
+    padding: 10px 30px;
+  }
+
+  .zoom-float p {
+    font-family: brother-1816, sans-serif;
+margin: 0px;
+  }
+
+    .zoom-float h4{
+      font-family: brother-1816, sans-serif;
+      font-weight: 700;
+  }

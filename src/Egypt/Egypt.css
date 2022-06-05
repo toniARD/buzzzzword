@@ -1,0 +1,38 @@
+.Egypt-background{
+    background: url("./giphy\ \(1\).gif");
+    /* background-position: 100% 100%; */
+    height: 100vh;
+    background-size: 10%;
+}
+
+
+
+.egypt-float{
+    position: absolute;
+    left: 9%;
+    bottom: 17%;
+    color: black;
+    background-color: #EBFA03;
+    padding: 120px 30px;
+  }
+
+  .egypt-float p {
+    font-family: brother-1816, sans-serif;
+margin: 0px;
+font-weight: 100;
+text-align: center;
+  }
+
+    .egypt-float h4{
+      font-family: brother-1816, sans-serif;
+      font-weight: 700;
+      text-align: center;
+  }
+
+  .Egypt-background{
+    margin-bottom: 0px;
+  }
+
+  #black{
+    margin-bottom: 0px;
+  }

@@ -1,23 +1,135 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+  useHistory,
+  useLocation,
+} from "react-router-dom";
+import LandingPage from "./LandingPage/LandingPage";
+import Fly from "./Fly/Fly";
+import FindTheQueen from "./find-the-queen/find-the-queen";
+import FlowerVideo from "./FlowerVideo/FlowerVideo";
+import BouncingDvd from "./BouncingDvd/BouncingDvd";
+import InfoLayer from "./InfoLayer/InfoLayer";
+import BlackLogo from "./Copy of logo_black.png";
+import WhiteLogo from "./Copy of logo white.png";
+// import GifVideo from "./GifVideo/GifVideo";
+import Eggs from "./Eggs/Eggs";
+import Egypt from "./Egypt/Egypt";
+import Error from "./Error/Error";
+import LandingPage2 from "./LandingPage2/LandingPage2";
+import Zoom from "./Zoom/Zoom";
+import Ultraviolet from "./Ultraviolet/Ultraviolet";
+import Dance from "./Dance/Dance";
+import BearAttack from "./BearAttack/BearAttack";
+import Shadows from "./Shadows/Shadows";
 
-function App() {
+const Websites = [
+  "/Flower-Scroll",
+  "/Eggs",
+  "/Error",
+  "/Egypt",
+  "/Bouncing-Dvd",
+  "/Zoom",
+  "/Dance",
+  "/Ultraviolet",
+  "/Fly",
+  "/Find-the-Queen",
+];
+
+function App(props) {
+  const send = useNavigate();
+  // const history = useHistory();
+  const location = useLocation();
+
+  const [volume, SetVolume] = useState(false);
+  const [index, SetIndex] = useState(0);
+  // const [layer, SetLayer] = useState(false);
+  // const [layer, SetLayer] = useState(false);
+
+  // console.log(props.history);
+  console.log(location);
+  const LayerToggle = () => {
+    send("/InfoLayer");
+  };
+
+  useEffect(() => {
+    if (location && location.pathname === "/Bouncing-Dvd") {
+      var element = document.getElementsByClassName("wtf-btn");
+      element[0].style.backgroundColor = "white";
+      element = document.getElementsByClassName("more-btn");
+      element[0].style.backgroundColor = "white";
+    }
+  });
+
+  const More = () => {
+    send(Websites[index]);
+    SetIndex(index + 1);
+    // 1 less than total
+    if (index === Websites.length - 1) {
+      SetIndex(0);
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="parentComponent">
+      {/* {(location && location.pathname === "/") ||
+      (location && location.pathname === "/LandingPage2") ? null : (
+        <div className="more-btn">MORE!</div>
+      )}
+      {location && location.pathname === "/InfoLayer" ? null : (
+        <div onClick={LayerToggle} className="wtf-btn">
+          WTF
+        </div>
+      )}
+
+      {(location && location.pathname === "/") ||
+      (location && location.pathname === "/LandingPage2") ? null : (
+        <div className="more-btn">MORE!</div>
+      )} */}
+
+      <Routes>
+        <Route exact path="/" element={<LandingPage More={More} />} />
+        <Route
+          exact
+          path="/LandingPage2"
+          element={<LandingPage2 More={More} />}
+        />
+        <Route exact path="/InfoLayer" element={<InfoLayer More={More} />} />
+        <Route
+          exact
+          path="/Flower-Scroll"
+          element={<FlowerVideo More={More} />}
+        />
+        <Route exact path="/Egypt" element={<Egypt More={More} />} />
+        <Route exact path="/Eggs" element={<Eggs More={More} />} />
+        <Route exact path="/Zoom" element={<Zoom More={More} />} />
+        <Route exact path="/Error" element={<Error More={More} />} />
+        <Route
+          exact
+          path="/Bouncing-Dvd"
+          element={<BouncingDvd More={More} />}
+        />
+        <Route
+          exact
+          path="/Ultraviolet"
+          element={<Ultraviolet More={More} />}
+        />
+        <Route exact path="/Dance" element={<Dance More={More} />} />
+
+        <Route exact path="/Fly" element={<Fly More={More} />} />
+        <Route
+          exact
+          path="/Find-The-Queen"
+          element={<FindTheQueen More={More} />}
+        />
+        <Route exact path="/Bear-Attack" element={<BearAttack More={More} />} />
+        {/* { <Route exact path="/Gif-Video" element={<GifVideo />} /> */}
+        {/* <Route exact path="/Shadows" element={<Shadows More={More} />} /> */}
+      </Routes>
     </div>
   );
 }
