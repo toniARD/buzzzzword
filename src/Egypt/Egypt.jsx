@@ -21,11 +21,11 @@ const Egypt = ({ More }) => {
         onClick={() => {
           send("/InfoLayer");
         }}
-        className="wtf-btn "
+        className="wtf-btn egypt-more"
       >
         WTF
       </div>
-      <div onClick={More} className="more-btn ">
+      <div onClick={More} className="more-btn egypt-more">
         MORE!
       </div>
       <div className="egypt-float">
@@ -40,7 +40,14 @@ const Egypt = ({ More }) => {
       </div>
 
       <div className="Egypt-background">
-        <img src={BlackLogo} className="logo black" alt="logo" />
+        <img
+          src={BlackLogo}
+          onClick={() => {
+            send("/");
+          }}
+          className="logo black"
+          alt="logo"
+        />
       </div>
     </>
   );

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import InfoGif from "./logoanimation_clear.gif";
+import InfoGif from "./logo06062022_1.gif";
 import BlackLogo from "../Copy of logo_black.png";
 import WhiteLogo from "../Copy of logo white.png";
 import {
@@ -23,11 +23,11 @@ const InfoLayer = ({ path, More }) => {
         onClick={() => {
           send(-1);
         }}
-        className="wtf-btn"
+        className="wtf-btn oh"
       >
         Oh Ok
       </div>
-      <div onClick={More} className="more-btn">
+      <div onClick={More} className="more-btn info-more">
         MORE!
       </div>
       <div className="info-layer main-container">

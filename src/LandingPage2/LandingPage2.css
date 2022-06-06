@@ -166,3 +166,12 @@ font-style: italic;
   }
 
   /* Common Components */
+
+  .no-border{
+      border: none !important;
+  }
+
+  .landpage-red:hover{
+      background-color: #000000 !important;
+      color: #ff4b09 !important;
+  }

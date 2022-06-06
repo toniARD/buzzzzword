@@ -9,6 +9,8 @@ body {
     font-size: 1.4rem;
 }
 
+
+
 #bound-one {
     background: #d0d8db;
 }
@@ -42,7 +44,7 @@ body {
 
 .scroll-bound video {
     width: 100%;
-    transform: scale(1.5);
+    transform: scale(1.4);
 }
 
 @media only screen and (max-width: 600px) {
@@ -80,4 +82,9 @@ font-weight: 100;
       font-family: brother-1816, sans-serif;
       font-weight: 700;
       
+  }
+
+  .flower-more:hover{
+      background: #000000 !important;
+      color: white !important;
   }

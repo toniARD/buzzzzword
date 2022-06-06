@@ -9,9 +9,10 @@ import {
 } from "react-router-dom";
 import "./FindTheQueen.css";
 import CAFasdfs from "./PNG/2C.png";
-import LogoCard from "./asdfadsgsadgsdagsadgasdg.PNG";
+import LogoCard from "./top_card.png";
 import ClickSound from "./card lift.mp3";
-import yas_queen from "./yas_queen.mp3";
+import yas_queen from "./yas_queen-[AudioTrimmer.com].mp3";
+import BlackLogo from "../Copy of logo_black.png";
 const CardClick = new Audio(ClickSound);
 const QueenFound = new Audio(yas_queen);
 
@@ -110,6 +111,14 @@ export default function FindTheQueen({ More }) {
 
   return (
     <>
+      <img
+        src={BlackLogo}
+        onClick={() => {
+          send("/");
+        }}
+        className="logo black dance-logo"
+        alt="logo"
+      />
       <div className="queen-float">
         <p>
           There can be as many as
@@ -125,11 +134,11 @@ export default function FindTheQueen({ More }) {
         onClick={() => {
           send("/InfoLayer");
         }}
-        className="wtf-btn"
+        className="wtf-btn queen-more"
       >
         WTF
       </div>
-      <div onClick={More} className="more-btn">
+      <div onClick={More} className="more-btn queen-more">
         MORE!
       </div>
       <div className="Main-Card">

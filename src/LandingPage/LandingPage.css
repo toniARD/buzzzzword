@@ -1,5 +1,5 @@
 .landing-page-container{
-    background-image: url("./child.jpg");
+    background-image: url("./child.jpg") ;
 
     background-size: contain;
     width: 100vw;
@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
 }
 .landing-page-container .wrapper{
-    background-image: url("./green\ spray.png");
+    background-image: url("./green\ spray.png") ;
 
     background-size: cover;
     width: 100vw;
@@ -16,6 +16,28 @@
     background-repeat: no-repeat;
 
 }
+
+
+.landing-page-container.green{
+    background-image: url("./child.jpg") ;
+
+    background-size: contain;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.landing-page-container .wrapper.green{
+    background-image: url("./green\ spray.png") ;
+
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+
 .landing-page-container .wrapper .content{
     position: absolute;
     top: 30%;
@@ -166,3 +188,15 @@ font-style: italic;
   }
 
   /* Common Components */
+
+  .landing-green:hover{
+      background-color: #000000 !important;
+      color: #4cf948 !important;
+  }
+
+  .landing-page-container{
+      margin-bottom: 0px;
+  }
+  .landing-page-container .wrapper{
+margin-bottom: 0px;
+  }

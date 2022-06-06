@@ -72,14 +72,21 @@ const BouncingDvd = ({ More }) => {
         onClick={() => {
           send("/InfoLayer");
         }}
-        className="wtf-btn dvd"
+        className="wtf-btn dvd bounc-more"
       >
         WTF
       </div>
-      <div onClick={More} className="more-btn dvd">
+      <div onClick={More} className="more-btn dvd bounc-more">
         MORE!
       </div>
-      <img src={WhiteLogo} className="logo black" alt="logo" />
+      <img
+        src={WhiteLogo}
+        onClick={() => {
+          send("/");
+        }}
+        className="logo black"
+        alt="logo"
+      />
       <div className="bouncing-float">
         <p>Honey has no expiration date </p>
         <h4>YOU CAN EAT IT FOREVER</h4>

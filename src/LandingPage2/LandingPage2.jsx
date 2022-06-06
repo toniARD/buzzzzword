@@ -4,16 +4,40 @@ import Lady from "./LADYS_croped.jpg";
 import RedSpray from "./spray.png";
 import star from "./star.gif";
 import WhiteLogo from "../Copy of logo white.png";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+  useHistory,
+  useLocation,
+} from "react-router-dom";
+const LandingPage2 = ({ More }) => {
+  const send = useNavigate();
 
-const LandingPage2 = () => {
   useEffect(() => {
     import("./LandingPage2.css");
   }, []);
 
   return (
     <>
-      <img src={WhiteLogo} className="logo black" alt="logo" />
+      <img
+        src={WhiteLogo}
+        onClick={() => {
+          send("/");
+        }}
+        className="logo black"
+        alt="logo"
+      />
 
+      <div
+        onClick={() => {
+          send("/InfoLayer");
+        }}
+        className="wtf-btn landpage-red"
+      >
+        WTF
+      </div>
       <div className="landing-page-container">
         <div className="wrapper">
           <p className="date-top">July 2022</p>
@@ -33,7 +57,7 @@ const LandingPage2 = () => {
               </p>
             </p>
             <p className="long-para-landing-page">CLICK.LAUGH.LEARN. REPEAT</p>
-            <button>Coming soon</button>
+            <button className="no-border">Coming soon</button>
           </div>
         </div>
       </div>

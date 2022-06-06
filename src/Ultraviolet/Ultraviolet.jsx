@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Purple from "./purple_text.gif";
 import Red from "./red_text.gif";
+import WhiteLogo from "../Copy of logo white.png";
 import {
   BrowserRouter as Router,
   Route,
@@ -21,15 +22,23 @@ const Ultraviolet = ({ More }) => {
   return (
     <>
       <div className="ultra-parent">
+        <img
+          src={WhiteLogo}
+          onClick={() => {
+            send("/");
+          }}
+          className="logo black"
+          alt="logo"
+        />
         <div
           onClick={() => {
             send("/InfoLayer");
           }}
-          className="wtf-btn ultra"
+          className="wtf-btn ultra ultra-more"
         >
           WTF
         </div>
-        <div onClick={More} className="more-btn ultra">
+        <div onClick={More} className="more-btn ultra ultra-more">
           MORE!
         </div>
         {red ? (

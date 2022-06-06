@@ -7,6 +7,7 @@
     display: grid;
     place-items: center;
     font: 700 12px system-ui;
+    transform: scale(5);
   }
   .zoom-float{
     position: absolute;
@@ -29,3 +30,8 @@ margin: 0px;
       font-family: brother-1816, sans-serif;
       font-weight: 700;
   }
+
+  .zoom-more:hover{
+    background: #000000 !important;
+    color: white !important;
+}

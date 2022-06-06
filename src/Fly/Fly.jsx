@@ -5,6 +5,8 @@ import background_noise from "./background_noise.mp3";
 import click_sound from "./click_sound.mp3";
 import { useEffect } from "react";
 import BlackLogo from "../Copy of logo_black.png";
+import VolumeIcon from "./afc445b1-b91b-451e-85df-a0788a9ffa4f.svg";
+import MuteIcon from "./f974e30f-891f-4677-ae5c-5b99a4a74200.svg";
 import {
   BrowserRouter as Router,
   Route,
@@ -61,18 +63,26 @@ const Fly = ({ More }) => {
 
   return (
     <>
+      <svg src={VolumeIcon}></svg>
       <div
         onClick={() => {
           send("/InfoLayer");
         }}
-        className="wtf-btn Fly"
+        className="wtf-btn Fly fly-more"
       >
         WTF
       </div>
-      <div onClick={More} className="more-btn Fly">
+      <div onClick={More} className="more-btn Fly fly-more">
         MORE!
       </div>
-      <img src={BlackLogo} className="logo black" alt="logo" />{" "}
+      <img
+        src={BlackLogo}
+        onClick={() => {
+          send("/");
+        }}
+        className="logo black"
+        alt="logo"
+      />{" "}
       <div className="fly-float">
         <p>
           Bess can sit sting many times <br />

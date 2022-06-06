@@ -31,3 +31,8 @@ font-weight: 100;
   .gif-background-eggs{
     margin-bottom: 0px;
   }
+
+  .eggs-more:hover{
+    background: #000000 !important;
+    color: white !important;
+}

@@ -29,7 +29,14 @@ const Error = ({ More }) => {
       <div onClick={More} className="more-btn Error">
         MORE!
       </div>
-      <img src={GreenLogo} className="logo black" alt="logo" />
+      <img
+        src={GreenLogo}
+        onClick={() => {
+          send("/");
+        }}
+        className="logo black"
+        alt="logo"
+      />
       <div className="Error-background">
         <img src={Bg} alt="" />{" "}
       </div>

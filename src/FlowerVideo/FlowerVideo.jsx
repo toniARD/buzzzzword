@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import FlowerVid from "./fullscreen_white.mp4";
+import FlowerVid from "./kolidascope_5.mp4";
 import BlackLogo from "../Copy of logo_black.png";
 
 import {
@@ -47,11 +47,11 @@ const FlowerVideo = ({ More }) => {
         onClick={() => {
           send("/InfoLayer");
         }}
-        className="wtf-btn"
+        className="wtf-btn flower-more"
       >
         WTF
       </div>
-      <div onClick={More} className="more-btn">
+      <div onClick={More} className="more-btn flower-more">
         MORE!
       </div>
       <div className="flower-float">
@@ -73,6 +73,9 @@ const FlowerVideo = ({ More }) => {
       <img
         style={{ zIndex: "10000000", position: "fixed" }}
         src={BlackLogo}
+        onClick={() => {
+          send("/");
+        }}
         className="logo black"
         alt="logo"
       />

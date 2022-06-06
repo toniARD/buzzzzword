@@ -20,19 +20,26 @@ const LandingPage = ({ LayerToggle, More }) => {
 
   return (
     <>
-      <img src={WhiteLogo} className="logo black" alt="logo" />
+      <img
+        src={WhiteLogo}
+        onClick={() => {
+          send("/");
+        }}
+        className="logo black"
+        alt="logo"
+      />
 
       <div
         onClick={() => {
           send("/InfoLayer");
         }}
-        className="wtf-btn"
+        className="wtf-btn landing-green"
       >
         WTF
       </div>
 
-      <div className="landing-page-container">
-        <div className="wrapper">
+      <div className="landing-page-container green">
+        <div className="wrapper green">
           <p className="date-top">June 2022</p>
           <p
             onClick={() => {
@@ -57,7 +64,9 @@ const LandingPage = ({ LayerToggle, More }) => {
               </p>
             </p>
             <p className="long-para-landing-page">CLICK.LAUGH.LEARN. REPEAT</p>
-            <button onClick={More}>LET ME SHOW YOU</button>
+            <button className="landing-green" onClick={More}>
+              LET ME SHOW YOU
+            </button>
           </div>
         </div>
       </div>

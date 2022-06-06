@@ -903,3 +903,6 @@ html,body ,*{
 .parentComponent,#root{
   margin-bottom: 0px !important;
 }
+.logo{
+  cursor: pointer;
+}

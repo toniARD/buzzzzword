@@ -110,3 +110,12 @@ text-align: left;
       text-align: left;
       font-size: 18px;
   }
+
+
+  
+  .queen-more:hover{
+    background: #000000 !important;
+    color: white !important;
+}
+
+

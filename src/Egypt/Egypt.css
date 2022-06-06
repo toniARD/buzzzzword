@@ -36,3 +36,7 @@ text-align: center;
   #black{
     margin-bottom: 0px;
   }
+  .egypt-more:hover{
+    background: #000000 !important;
+    color: #EBFA03 !important;
+}

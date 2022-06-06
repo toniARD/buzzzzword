@@ -57,8 +57,9 @@ function App(props) {
   };
 
   useEffect(() => {
+    var element;
     if (location && location.pathname === "/Bouncing-Dvd") {
-      var element = document.getElementsByClassName("wtf-btn");
+      element = document.getElementsByClassName("wtf-btn");
       element[0].style.backgroundColor = "white";
       element = document.getElementsByClassName("more-btn");
       element[0].style.backgroundColor = "white";
@@ -68,6 +69,7 @@ function App(props) {
   const More = () => {
     send(Websites[index]);
     SetIndex(index + 1);
+
     // 1 less than total
     if (index === Websites.length - 1) {
       SetIndex(0);

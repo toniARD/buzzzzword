@@ -3,3 +3,50 @@ video{
     transform: scale(1.5);
     height: 100vh;
 }
+
+.video-scroll{
+    overflow: hidden;
+    height: 100vh;
+}
+.dance-float{
+    position: absolute;
+    left: 9%;
+    bottom: 17%;
+    color: black;
+    background-color: white;
+    padding: 10px 15px;
+    z-index: 1000;
+    opacity: 0.6;
+    border-radius: 15px;
+  }
+
+  .dance-float p {
+    font-family: brother-1816, sans-serif;
+margin: 0px;
+font-weight: 100;
+font-size: 13px;
+
+  }
+
+    .dance-float h4{
+      font-family: brother-1816, sans-serif;
+      font-weight: 700;
+font-size: 18px;
+  }
+
+
+
+  .dance-more:hover{
+    background: #000000 !important;
+    color: white !important;
+}
+
+.dance-logo{
+  z-index: 100000;
+}
+
+
+.video-scroll {
+
+  margin-bottom: 0px;
+}

@@ -2,15 +2,6 @@
 
 # dependencies
 /node_modules
-/src/GifVideo";
-/src/Eggs";
-/src/Egypt";
-/src/Error";
-/src/Zoom";
-/src/Ultraviolet";
-/src/Dance";
-/src/InfoLayer";
-/src/BearAttack";
 /.pnp
 .pnp.js
 

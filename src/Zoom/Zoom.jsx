@@ -14,7 +14,7 @@ const Zoom = ({ More }) => {
   const send = useNavigate();
   useEffect(() => {
     const zoomElement = document.querySelector(".workspace");
-    let zoom = 1;
+    let zoom = 5;
     const ZOOM_SPEED = 0.1;
 
     window.document.addEventListener("wheel", function (e) {
@@ -40,14 +40,21 @@ const Zoom = ({ More }) => {
         onClick={() => {
           send("/InfoLayer");
         }}
-        className="wtf-btn "
+        className="wtf-btn zoom-more"
       >
         WTF
       </div>
-      <div onClick={More} className="more-btn ">
+      <div onClick={More} className="more-btn zoom-more">
         MORE!
       </div>
-      <img src={BlackLogo} className="logo black" alt="logo" />
+      <img
+        src={BlackLogo}
+        onClick={() => {
+          send("/");
+        }}
+        className="logo black"
+        alt="logo"
+      />
       <div className="zoom-float">
         <p>Only the honey bee is talked about but there are over </p>
         <h4>20,000 DIFFERENR KIND OF BEES</h4>

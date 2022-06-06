@@ -27,10 +27,17 @@ const Eggs = ({ More }) => {
       >
         WTF
       </div>
-      <div onClick={More} className="more-btn">
+      <div onClick={More} className="more-btn eggs-more">
         MORE!
       </div>
-      <img src={WhiteLogo} className="logo black" alt="logo" />
+      <img
+        src={WhiteLogo}
+        onClick={() => {
+          send("/");
+        }}
+        className="logo black"
+        alt="logo"
+      />
       <div className="eggs-float">
         <p>
           The queen bee lays 2000 eggs everday,

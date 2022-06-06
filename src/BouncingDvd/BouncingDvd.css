@@ -100,3 +100,9 @@ margin: 0px;
   color: black;
   border: 2px solid white;
       }
+
+
+      .bounc-more:hover{
+        background: white !important;
+        color: #000000 !important;
+    }
