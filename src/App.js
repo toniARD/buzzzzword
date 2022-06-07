@@ -29,6 +29,7 @@ import Shadows from "./Shadows/Shadows";
 
 const Websites = [
   "/Flower-Scroll",
+  "/Bear-Attack",
   "/Eggs",
   "/Error",
   "/Egypt",
@@ -38,7 +39,6 @@ const Websites = [
   "/Ultraviolet",
   "/Fly",
   "/Find-the-Queen",
-  "/Bear-Attack",
 ];
 
 function App(props) {
@@ -70,6 +70,7 @@ function App(props) {
   const More = () => {
     send(Websites[index]);
     SetIndex(index + 1);
+    // window.open("http://localhost:3000" + Websites[index], "_blank");
 
     // 1 less than total
     if (index === Websites.length - 1) {

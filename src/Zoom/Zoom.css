@@ -35,3 +35,6 @@ margin: 0px;
     background: #000000 !important;
     color: white !important;
 }
+.god-zoom{
+  z-index: 10000000000000000000000000000;
+}

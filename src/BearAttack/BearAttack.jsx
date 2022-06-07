@@ -84,7 +84,7 @@ const BearAttack = ({ More }) => {
 
   const height = "500px";
   return (
-    <div className="">
+    <>
       <div
         onClick={() => {
           send("/InfoLayer");
@@ -115,7 +115,6 @@ const BearAttack = ({ More }) => {
                 tabindex="-1"
                 role="dialog"
                 aria-labelledby="exampleModalLabel"
-                aria-model="true"
                 style={{
                   display: "block",
                   marginTop: getRandomTop(1, 80),
@@ -295,7 +294,7 @@ const BearAttack = ({ More }) => {
         </pre>
       </div> */}
       </div>
-    </div>
+    </>
   );
 };
 

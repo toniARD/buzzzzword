@@ -52,7 +52,7 @@ const Zoom = ({ More }) => {
         onClick={() => {
           send("/");
         }}
-        className="logo black"
+        className="logo black god-zoom"
         alt="logo"
       />
       <div className="zoom-float">
