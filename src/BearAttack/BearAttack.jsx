@@ -1,9 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Icon from "./danger.png";
 import Logo from "./logo white.png";
-
+import WhiteLogo from "../Copy of logo white.png";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  useNavigate,
+  useHistory,
+  useLocation,
+} from "react-router-dom";
 // import CreateImage from "./createImages";
-const BearAttack = () => {
+const BearAttack = ({ More }) => {
+  const send = useNavigate();
   const [counter, SetCounter] = useState([
     { data: "asdfdasf" },
     { data: "asdfdasf" },
@@ -75,55 +84,76 @@ const BearAttack = () => {
 
   const height = "500px";
   return (
-    <div className="App Bear-Container">
-      {/* <CreateImage /> */}
-      {counter
-        ? counter.map((item, id) => (
-            <div
-              class="modal fade show"
-              id={id}
-              tabindex="-1"
-              role="dialog"
-              aria-labelledby="exampleModalLabel"
-              aria-model="true"
-              style={{
-                display: "block",
-                marginTop: getRandomTop(1, 80),
-                marginLeft: getRandomLeft(-1, 85),
-                // position: "absolute",
-              }}
-            >
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <img src={Logo} alt="" />
-                  </div>
-                  <div class="modal-body">
-                    <div className="d-flex icon-text-wrapper">
-                      <div className="icon">
-                        <img src={Icon} alt="" />
-                      </div>
-                      <div className="text">Bear Detected</div>
+    <div className="">
+      <div
+        onClick={() => {
+          send("/InfoLayer");
+        }}
+        className="wtf-btn dvd bounc-more"
+      >
+        WTF
+      </div>
+      <div onClick={More} className="more-btn dvd bounc-more">
+        MORE!
+      </div>
+      <img
+        src={WhiteLogo}
+        onClick={() => {
+          send("/");
+        }}
+        className="logo black"
+        alt="logo"
+      />
+
+      <div className="App Bear-Container bear-attack-back">
+        {/* <CreateImage /> */}
+        {counter
+          ? counter.map((item, id) => (
+              <div
+                class="modal fade show"
+                id={id}
+                tabindex="-1"
+                role="dialog"
+                aria-labelledby="exampleModalLabel"
+                aria-model="true"
+                style={{
+                  display: "block",
+                  marginTop: getRandomTop(1, 80),
+                  marginLeft: getRandomLeft(-1, 85),
+                  // position: "absolute",
+                }}
+              >
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <img src={Logo} alt="" />
                     </div>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      onClick={(e) => {
-                        CloseDiv(e, id);
-                      }}
-                      type="button"
-                      class="closebutton"
-                    >
-                      ATTACK
-                    </button>
+                    <div class="modal-body">
+                      <div className="d-flex icon-text-wrapper">
+                        <div className="icon">
+                          <img src={Icon} alt="" />
+                        </div>
+                        <div className="text">Bear Detected!</div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        onClick={(e) => {
+                          CloseDiv(e, id);
+                        }}
+                        type="button"
+                        class="closebutton"
+                      >
+                        ATTACK
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))
-        : "zero"}
+            ))
+          : "zero"}
 
-      {/* <div className="container-fluid">
+        {/* <div className="container-fluid">
         {Array.map((item) => item)}
         {form === false ? (
           <>
@@ -264,6 +294,7 @@ const BearAttack = () => {
             : null}
         </pre>
       </div> */}
+      </div>
     </div>
   );
 };

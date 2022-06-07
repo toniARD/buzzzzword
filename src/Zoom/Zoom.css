@@ -7,7 +7,7 @@
     display: grid;
     place-items: center;
     font: 700 12px system-ui;
-    transform: scale(5);
+ 
   }
   .zoom-float{
     position: absolute;

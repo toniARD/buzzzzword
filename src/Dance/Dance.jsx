@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Video from "./backgroundvideo_withsound (online-video-cutter.com).mp4";
 import {
   BrowserRouter as Router,
@@ -10,14 +10,34 @@ import {
 } from "react-router-dom";
 import BlackLogo from "../Copy of logo_black.png";
 const Dance = ({ More }) => {
+  const [volume, SetVolume] = useState(false);
+
   const send = useNavigate();
   useEffect(() => {
     import("./Dance.css");
   }, []);
 
+  const VolumeControler = () => {
+    SetVolume(!volume);
+    const element = document.getElementById("dance-video");
+    if (volume === true) {
+      element.muted = true;
+    } else {
+      element.muted = false;
+    }
+  };
+
   return (
     <>
       <div className="video-scroll">
+        <div onClick={VolumeControler}>
+          {volume ? (
+            <img src="volumeBlack.png" className="volume dance" alt="" />
+          ) : (
+            <img src="muteBlack.png" className="volume dance" alt="" />
+          )}
+        </div>
+
         <img
           src={BlackLogo}
           onClick={() => {
@@ -46,7 +66,13 @@ const Dance = ({ More }) => {
           MORE!
         </div>
 
-        <video width="750" height="500" muted autoPlay={true}>
+        <video
+          id="dance-video"
+          width="750"
+          height="500"
+          muted="true"
+          autoPlay={true}
+        >
           <source alt="video" width="100px" src={Video} type="video/mp4" />
         </video>
       </div>

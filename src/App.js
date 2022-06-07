@@ -38,6 +38,7 @@ const Websites = [
   "/Ultraviolet",
   "/Fly",
   "/Find-the-Queen",
+  "/Bear-Attack",
 ];
 
 function App(props) {
@@ -129,8 +130,6 @@ function App(props) {
           element={<FindTheQueen More={More} />}
         />
         <Route exact path="/Bear-Attack" element={<BearAttack More={More} />} />
-        {/* { <Route exact path="/Gif-Video" element={<GifVideo />} /> */}
-        {/* <Route exact path="/Shadows" element={<Shadows More={More} />} /> */}
       </Routes>
     </div>
   );

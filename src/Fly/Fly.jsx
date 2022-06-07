@@ -1,9 +1,10 @@
+import React, { useEffect, useState } from "react";
 import fly from "./fly.gif";
 import splat from "./splat.gif";
 import ReactAudioPlayer from "react-audio-player";
 import background_noise from "./background_noise.mp3";
 import click_sound from "./click_sound.mp3";
-import { useEffect } from "react";
+
 import BlackLogo from "../Copy of logo_black.png";
 import VolumeIcon from "./afc445b1-b91b-451e-85df-a0788a9ffa4f.svg";
 import MuteIcon from "./f974e30f-891f-4677-ae5c-5b99a4a74200.svg";
@@ -17,13 +18,14 @@ import {
 } from "react-router-dom";
 
 const Fly = ({ More }) => {
+  const [volume, SetVolume] = useState(true);
   const audio = new Audio(click_sound);
   const backgroundReact = new Audio(background_noise);
   const send = useNavigate();
   console.log("backgroundReact", backgroundReact);
   useEffect(() => {
     import("./Fly.css");
-    backgroundReact.play();
+    // backgroundReact.play();
     return () => {
       console.log("Unmounted");
       backgroundReact.pause();
@@ -40,11 +42,11 @@ const Fly = ({ More }) => {
   // <img className="splat-image" width="100px" src={splat} />);
   //   }
   // }
-  const PlayMusic = () => {
-    console.log("working");
-    backgroundReact.play();
-    // backgroundReact.loop = true;
-  };
+  // const PlayMusic = () => {
+  //   console.log("working");
+  //   backgroundReact.play();
+  //   // backgroundReact.loop = true;
+  // };
 
   // backgroundReact.loop = true;
   // console.log(backgroundReact);
@@ -57,13 +59,37 @@ const Fly = ({ More }) => {
     // Show splat
     element.children[0].children[1].style.display = "block";
     // element.style.display = "none";
-    audio.play();
-    PlayMusic();
+    if (volume === true) {
+      audio.play();
+    }
+    backgroundReact.play();
+    // PlayMusic();
+  };
+
+  useEffect(() => {
+    if (volume === true) {
+      // element.muted = true;
+      backgroundReact.play();
+    } else {
+      // element.muted = false;
+      backgroundReact.pause();
+    }
+  }, [volume]);
+
+  const VolumeControler = () => {
+    SetVolume(!volume);
+    // const element = document.getElementById("dance-video");
   };
 
   return (
     <>
-      <svg src={VolumeIcon}></svg>
+      {/* <div onClick={VolumeControler}>
+        {volume ? (
+          <img src="volumeBlack.png" className="volume dance" alt="" />
+        ) : (
+          <img src="muteBlack.png" className="volume dance" alt="" />
+        )}
+      </div> */}
       <div
         onClick={() => {
           send("/InfoLayer");
@@ -90,7 +116,7 @@ const Fly = ({ More }) => {
         </p>
         <h4>KILL THE FLYS.</h4>
       </div>
-      <div className="bg" onMouseEnter={PlayMusic}>
+      <div className="bg">
         {/* <ReactAudioPlayer
         src={background_noise}
         autoPlay={true}

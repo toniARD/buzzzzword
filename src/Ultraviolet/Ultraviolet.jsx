@@ -19,6 +19,9 @@ const Ultraviolet = ({ More }) => {
     import("./Ultraviolet.css");
   }, []);
 
+  const REDFunction = () => {
+    SetRed(!red);
+  };
   return (
     <>
       <div className="ultra-parent">
@@ -49,9 +52,7 @@ const Ultraviolet = ({ More }) => {
 
         <form>
           <input
-            onChange={() => {
-              SetRed(!red);
-            }}
+            onClick={REDFunction}
             type="checkbox"
             id="pure-toggle-5"
             hidden

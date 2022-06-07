@@ -68,6 +68,7 @@ const Cards = [
   "./PNG/queen.png",
 ];
 export default function FindTheQueen({ More }) {
+  const [volume, SetVolume] = useState(true);
   const send = useNavigate();
   const [number, SetNumber] = useState(null);
   const importAll = (r) => {
@@ -78,6 +79,10 @@ export default function FindTheQueen({ More }) {
     return images;
   };
 
+  const VolumeControler = () => {
+    SetVolume(!volume);
+    // const element = document.getElementById("dance-video");
+  };
   const images = importAll(
     require.context("./PNG", false, /\.(png|jpe?g|svg)$/)
   );
@@ -96,21 +101,33 @@ export default function FindTheQueen({ More }) {
     let number = await generateRandom();
     console.log(number);
     SetNumber(number);
+    SetVolume(true);
   };
 
   useEffect(() => {
     if (number === 48) {
       console.log("Quene found at ", number);
       document.documentElement.style.setProperty("--chess-bg-color", "#ffff00");
-      QueenFound.play();
+      if (volume === true) {
+        QueenFound.play();
+      }
     } else {
-      CardClick.play();
+      if (volume === true) {
+        CardClick.play();
+      }
       document.documentElement.style.setProperty("--chess-bg-color", "#df0000");
     }
   }, [number]);
 
   return (
     <>
+      {/* <div onClick={VolumeControler}>
+        {volume ? (
+          <img src="volumeBlack.png" className="volume dance" alt="" />
+        ) : (
+          <img src="muteBlack.png" className="volume dance" alt="" />
+        )}
+      </div> */}
       <img
         src={BlackLogo}
         onClick={() => {

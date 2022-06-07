@@ -14,7 +14,7 @@ const Zoom = ({ More }) => {
   const send = useNavigate();
   useEffect(() => {
     const zoomElement = document.querySelector(".workspace");
-    let zoom = 5;
+    let zoom = 1;
     const ZOOM_SPEED = 0.1;
 
     window.document.addEventListener("wheel", function (e) {
