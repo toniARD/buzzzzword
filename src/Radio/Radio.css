@@ -1,0 +1,171 @@
+html{
+    overflow-x: hidden;
+  }
+  
+
+  
+  .splat-image{
+    display: none;
+  }
+  
+  audio {
+    margin-left: -10000px;
+  }
+
+
+
+  .logo.white{
+    display: none;
+}
+
+.radio-float{
+  position: absolute;
+  bottom: 30%;
+  right: 2%;
+  opacity: 0.8;
+  color: black;
+  border-radius: 15px;
+  padding: 10px 30px;
+}
+
+.radio-float p {
+  font-family: brother-1816, sans-serif;
+margin: 0px;
+color: #fcf705;
+}
+
+  .radio-float h4{
+    font-family: brother-1816, sans-serif;
+    font-weight: 700;
+    color: #fcf705;
+}
+
+
+
+  .radio-more:hover{
+    background: #000000 !important;
+    color: white !important;
+}
+
+.bg {
+ 
+  height: 80vh !important;
+}
+
+
+/* Volume button */
+.speaker {
+  height: 30px;
+  width: 30px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.speaker span {
+  display: block;
+  width: 8px;
+  height: 8px;
+  background: #fff;
+  margin: 11px 0 0 2px;
+}
+.speaker span:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+  border-width: 10px 14px 10px 15px;
+  left: -13px;
+  top: 5px;
+}
+.speaker span:before {
+  transform: rotate(45deg);
+  border-radius: 0 50px 0 0;
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-style: double;
+  border-color: #fff;
+  border-width: 7px 7px 0 0;
+  left: 18px;
+  top: 9px;
+  transition: all 0.2s ease-out;
+}
+.speaker:hover span:before {
+  transform: scale(0.8) translate(-3px, 0) rotate(42deg);
+}
+.speaker.mute span:before {
+  transform: scale(0.5) translate(-15px, 0) rotate(36deg);
+  opacity: 0;
+}
+
+.volume{
+  position: absolute;
+  right: 4.3%;
+  z-index: 1000;
+  top: 8%;
+  width: 30px;
+  z-index: 10000000000000;
+}
+
+.radio-container{
+  background-color: #000000;
+  height: 100vh;
+  width: 100vw;
+  
+}
+.radio-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.radio-center img{
+  width: 100%;
+}
+
+
+.radio-more{
+  background: transparent;
+  color: #fcf705;
+  border: 2px solid #fcf705;
+}
+
+.radio-more:hover{
+  background: #fcf705 !important;
+  color: #000000 !important;
+  border: 2px solid #fcf705;
+}
+
+.btns-wrapper{
+display: flex;
+margin-top: 5%;
+margin-left: 5%;
+}
+.btns-wrapper img{
+  width: 40px;
+  margin-right: 10px;
+}
+.yellow-btn{
+  background-color: #fcf705;
+
+  color: black;
+border-radius:2px;
+margin-right: 2px;
+cursor: pointer;
+min-width: 30px;
+}
+
+.yellow-btn span{
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 31%;
+}
+
+.hide-player{
+  display: none;
+}

@@ -89,11 +89,11 @@ const BearAttack = ({ More }) => {
         onClick={() => {
           send("/InfoLayer");
         }}
-        className="wtf-btn dvd bounc-more"
+        className="wtf-btn bear bounc-more"
       >
         WTF
       </div>
-      <div onClick={More} className="more-btn dvd bounc-more">
+      <div onClick={More} className="more-btn bear bounc-more">
         MORE!
       </div>
       <img

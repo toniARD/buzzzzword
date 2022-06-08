@@ -23,6 +23,7 @@ import Error from "./Error/Error";
 import LandingPage2 from "./LandingPage2/LandingPage2";
 import Zoom from "./Zoom/Zoom";
 import Ultraviolet from "./Ultraviolet/Ultraviolet";
+import Radio from "./Radio/Radio";
 import Dance from "./Dance/Dance";
 import BearAttack from "./BearAttack/BearAttack";
 import Shadows from "./Shadows/Shadows";
@@ -131,6 +132,7 @@ function App(props) {
           element={<FindTheQueen More={More} />}
         />
         <Route exact path="/Bear-Attack" element={<BearAttack More={More} />} />
+        <Route exact path="/Radio" element={<Radio More={More} />} />
       </Routes>
     </div>
   );

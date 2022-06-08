@@ -107,7 +107,7 @@ border-radius: none !important;
 
 
 
-.wtf-btn.dvd{
+.wtf-btn.bear{
     position: absolute;
     right: 4%;
     top: 2%;
@@ -125,7 +125,7 @@ border-radius: none !important;
     color: white;
   
   }
-  .wtf-btn.dvd:hover{
+  .wtf-btn.bear:hover{
   color: black;
     cursor: pointer;
     background: white;
@@ -133,7 +133,7 @@ border-radius: none !important;
     border: 1px solid white;
      }
   
-     .more-btn.dvd{
+     .more-btn.bear{
        position: absolute;
        bottom: 2%;
        right: 2%;
@@ -153,7 +153,7 @@ border-radius: none !important;
        background: transparent !important;
      }
 
-     .more-btn.dvd:hover{
+     .more-btn.bear:hover{
   background-color: whitesmoke;
   color: black;
   border: 2px solid white;
