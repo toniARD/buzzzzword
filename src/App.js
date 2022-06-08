@@ -40,6 +40,7 @@ const Websites = [
   "/Ultraviolet",
   "/Fly",
   "/Find-the-Queen",
+  "/Radio",
 ];
 
 function App(props) {

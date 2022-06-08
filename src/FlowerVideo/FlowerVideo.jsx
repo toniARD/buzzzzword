@@ -82,7 +82,6 @@ const FlowerVideo = ({ More }) => {
       <div class="app">
         <div id="bound-one" class="scroll-bound">
           <div class="content">
-            <p>UseLess Website 1</p>
             <video width="600" muted preload>
               <source src={FlowerVid} type="video/webm" />
               <p>Your user agent does not support the HTML5 Video element.</p>
