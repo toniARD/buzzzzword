@@ -45,9 +45,9 @@ const Ultraviolet = ({ More }) => {
           MORE!
         </div>
         {red ? (
-          <img src={Red} alt="" width="100%" />
+          <img src={Red} alt="" width="83%" />
         ) : (
-          <img src={Purple} alt="" width="100%" />
+          <img src={Purple} alt="" width="83%" />
         )}
 
         <form>

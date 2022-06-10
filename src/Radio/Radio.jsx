@@ -149,7 +149,7 @@ const Radio = ({ More }) => {
           <br />
           to accept them
         </p>
-        <br />
+
         <h4>
           BEES ARE NOT SCARY
           <br />

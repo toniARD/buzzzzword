@@ -27,9 +27,9 @@ const InfoLayer = ({ path, More }) => {
       >
         Oh Ok
       </div>
-      <div onClick={More} className="more-btn info-more">
+      {/* <div onClick={More} className="more-btn info-more">
         MORE!
-      </div>
+      </div> */}
       <div className="info-layer main-container">
         <div className="info-block-center">
           <img src={InfoGif} alt="" />{" "}
@@ -37,25 +37,25 @@ const InfoLayer = ({ path, More }) => {
             <div className="info-block col-lg-3 col-md-3 col-12">
               <h4>WHAT?</h4>
               <p>
-                BUZZWORD is a newage fast witted form of learning designed to
-                triger our most modern sences: fomo, clickbaiting
-                <br /> &<br /> reading rediculously small amount of text
+                BUZZWORD is a newage fast witted form of learning, designed to
+                triger our most modern senses: clicking, scrolling
+                <br /> &<br /> reading rediculously small amounts of text
               </p>
             </div>
             <div className="info-block col-lg-3 col-md-3 col-12">
               <h4>HOW?</h4>
               <p>
-                using type, design and the wonders of javascript to create a
+                Using type, design and the wonders of javascript to create a
                 deeper learning experiance.
               </p>
             </div>
-            <div className="info-block col-lg-3 col-md-3 col-12">
+            {/* <div className="info-block col-lg-3 col-md-3 col-12">
               <h4>WHY?</h4>
               <p>
                 bees are perhaps the most important animal on the planet. we
                 should get to know them.
               </p>
-            </div>
+            </div> */}
             <div className="info-block col-lg-3 col-md-3 col-12">
               <h4>WHO? WHERE? WHEN?</h4>
               <p>

@@ -29,18 +29,18 @@ import BearAttack from "./BearAttack/BearAttack";
 import Shadows from "./Shadows/Shadows";
 
 const Websites = [
-  "/Flower-Scroll",
-  "/Bear-Attack",
-  "/Eggs",
   "/Error",
+  "/Radio",
+  "/Flower-Scroll",
+  "/Eggs",
+  "/Fly",
   "/Egypt",
   "/Bouncing-Dvd",
+  "/Find-the-Queen",
   "/Zoom",
   "/Dance",
   "/Ultraviolet",
-  "/Fly",
-  "/Find-the-Queen",
-  "/Radio",
+  "/Bear-Attack",
 ];
 
 function App(props) {
@@ -70,14 +70,28 @@ function App(props) {
   });
 
   const More = () => {
-    send(Websites[index]);
-    SetIndex(index + 1);
-    // window.open("http://localhost:3000" + Websites[index], "_blank");
-
-    // 1 less than total
-    if (index === Websites.length - 1) {
-      SetIndex(0);
+    if (location && location.pathname === "/") {
+      console.log("We are on Homepage");
+      window.open("http://localhost:3000" + Websites[index], "_blank");
+      SetIndex(index + 1);
+    } else if (location && location.pathname === "/Bear-Attack") {
+      console.log("Last React Website");
+      window.open(
+        "https://buzzzzzword.herokuapp.com/buzzon/index.html",
+        "_self"
+      );
+    } else if (location && location.pathname === "/Error") {
+      send(Websites[index + 1]);
+      SetIndex(index + 2);
+    } else {
+      send(Websites[index]);
+      SetIndex(index + 1);
     }
+
+    // // 1 less than total
+    // if (index === Websites.length - 1) {
+    //   SetIndex(0);
+    // }
   };
 
   return (

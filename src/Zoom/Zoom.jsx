@@ -57,7 +57,7 @@ const Zoom = ({ More }) => {
       />
       <div className="zoom-float">
         <p>Only the honey bee is talked about but there are over </p>
-        <h4>20,000 DIFFERENR KIND OF BEES</h4>
+        <h4>20,000 DIFFERENT KINDS OF BEES</h4>
       </div>
       <img src={Image} width="100px" className="workspace " alt="asfd" />
     </>

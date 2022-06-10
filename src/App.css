@@ -1,7 +1,9 @@
 html{
   overflow-x: hidden;
 }
-
+body{
+  margin: 0px;
+}
 
 .dot{
 /* background: url("../src/fly.gif")  !important; */

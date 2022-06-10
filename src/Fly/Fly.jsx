@@ -111,7 +111,7 @@ const Fly = ({ More }) => {
       />{" "}
       <div className="fly-float">
         <p>
-          Bess can sit sting many times <br />
+          Bees can sting many times <br />
           when fighting other insects{" "}
         </p>
         <h4>KILL THE FLYS.</h4>

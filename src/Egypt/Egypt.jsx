@@ -57,8 +57,8 @@ const Egypt = ({ More }) => {
       <div className="egypt-float">
         <p>
           Bee keeping
-          <br />
-          has been practice
+        
+          has been practiced
           <br />
           since the time of antiant egyptians
         </p>

@@ -127,3 +127,42 @@ text-align: left;
     width: 30px;
     z-index: 10000000000000;
   }
+    /* Toni css */
+  
+    
+
+
+
+    .queen-float{
+        position: absolute;
+        left: 10.2%;
+        top:22%;
+        color: black;
+        /* background-color: white; */
+        
+        padding: 1.3VW 1.3VW;
+        width: 16%;
+      }
+      .queen-float p{
+        font-family: kepler-std-extended-display, serif;
+        font-weight: 400 !important;
+        font-style: italic;
+        font-size: 1.2vw;
+        letter-spacing: 1px;
+      
+        color: rgb(0, 0, 0);
+        text-align: LEFT  ;
+        line-height: 1.2vw;
+        padding-bottom: 2%;
+      
+      }
+      .queen-float h4{
+        font-family: brother-1816, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: .5px;
+        text-align: LEFT;
+        font-size: 1.2vw;
+        
+      }
+      /* */

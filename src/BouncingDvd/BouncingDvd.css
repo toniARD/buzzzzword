@@ -7,7 +7,7 @@ body {
   #black {
     height: 100vh;
     width: 100vw;
-    background-color: #111;
+    background-color: rgb(0, 0, 0);
   }
   
   #dvd {
@@ -77,8 +77,9 @@ margin: 0px;
   
      .more-btn.dvd{
        position: absolute;
-       bottom: 2%;
-       right: 2%;
+       bottom: 5%;
+       right: 3%;
+       padding: 1px;
        font-family: brother-1816, sans-serif;
        font-weight: 900;
        font-size: 13px;
@@ -106,3 +107,46 @@ margin: 0px;
         background: white !important;
         color: #000000 !important;
     }
+    /* toni css */
+
+
+  .bouncing-float {
+    position: absolute;
+    bottom: 47%;
+    left: 38%;
+    opacity: .9;
+    color: rgb(206, 127, 0);
+    border-radius: 15px;
+    padding: 10px 30px;
+    /* align-items: center; */
+}
+#black {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+}
+.bouncing-float p {
+  font-family: kepler-std-extended-display, serif;
+  font-weight: 400 !important;
+  font-style: italic;
+  font-size: 1.2vw;
+  letter-spacing: 1px;
+
+  color: rgb(206, 127, 0);
+  text-align: LEFT  ;
+  line-height: 1.2vw;
+padding-bottom: 2%;
+}
+.bouncing-float h4{
+  font-family: brother-1816, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: .5px;
+  text-align: LEFT;
+  font-size: 1.2vw;
+}
+
+
+
+
+    /* */

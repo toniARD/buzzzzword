@@ -58,15 +58,14 @@ const FlowerVideo = ({ More }) => {
         <p>
           Individual bees tend to focus
           <br />
-          on one kind of flower at a time
+          on one kind of flower at a time.
           <br />
-          a single bee colony can
-          <br />
-          pollinate up to
+          A single bee colony can
+          pollinate
         </p>
         <br />
         <h4>
-          20 MILLION <br />
+          20 MILLION 
           FLOWERS A DAY
         </h4>
       </div>

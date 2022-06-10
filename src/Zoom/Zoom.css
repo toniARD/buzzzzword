@@ -38,3 +38,51 @@ margin: 0px;
 .god-zoom{
   z-index: 10000000000000000000000000000;
 }
+/* Toni css */
+  
+    
+
+
+
+  .zoom-float{
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    background-color: white;
+    opacity: 0.8;
+    color: black;
+    z-index: 100000;
+    border-radius: 15px;
+    padding: 10px 30px;
+  
+
+  
+    color: black;
+    background-color: white;
+    opacity: 90%;
+    padding: 2.6% 4%;
+  }
+  .zoom-float p{
+    font-family: kepler-std-extended-display, serif;
+    font-weight: 400 !important;
+    font-style: italic;
+    font-size: 1.2vw;
+    letter-spacing: 1px;
+  
+    color: rgb(0, 0, 0);
+    text-align: LEFT  ;
+    line-height: 1.2vw;
+  
+  }
+  .zoom-float h4{
+    font-family: brother-1816, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: .5px;
+    text-align: LEFT;
+    font-size: 1.2vw;
+    padding-top: 1%;
+  }
+  /* */
+  
+  

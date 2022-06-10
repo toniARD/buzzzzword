@@ -135,8 +135,9 @@ border-radius: none !important;
   
      .more-btn.bear{
        position: absolute;
-       bottom: 2%;
-       right: 2%;
+       bottom: 5%;
+       right: 3%;
+       padding: 1px;
        font-family: brother-1816, sans-serif;
        font-weight: 900;
        font-size: 13px;
@@ -164,3 +165,67 @@ border-radius: none !important;
         background: white !important;
         color: #000000 !important;
     }
+
+    /* Toni css */
+  
+    
+
+         .more-btn.bear{
+       position: absolute;
+       bottom: 5%;
+       right: 3%;
+       padding: 1px;
+       font-family: brother-1816, sans-serif;
+       font-weight: 900;
+       font-size: 13px;
+       color: white !important;
+    
+       padding: 2px 15px;
+       border-radius: 25px;
+       border: 2px solid #000000;
+       cursor: pointer;
+       z-index: 10000000000;
+       background-color: transparent;
+       color: #70ff00;
+       border: 2px solid white;
+       background: transparent !important;
+     }
+
+     .modal-footer button,
+.modal-footer button:focus,
+.modal-footer button:focus-visible,
+.modal-footer button:hover
+.modal-footer button:active{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto !important;
+    font-weight: 800 !important;
+    background: #CECECE !important;
+    border-style: solid !important;
+    border-color: gray;
+
+    outline: none !important;
+    box-shadow: none !important;
+    color: rgb(105 105 105);
+    box-shadow: 8px 9px 4px -8px rgb(154 154 154) !important;
+    box-shadow: inset 8px 9px 16px -8px rgb(218 218 218) !important;
+    padding: 5px 20px;
+
+}
+
+.icon-text-wrapper .text {
+    font-size: 17px;
+    font-weight: 400;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto !important;
+    padding-top:3%;
+    
+
+}
+.closebutton{
+    z-index: 1;
+    font-size: 13px;
+    padding-bottom: 2%;
+}
+
+    /* */
+    

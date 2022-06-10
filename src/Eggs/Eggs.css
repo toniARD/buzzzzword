@@ -36,3 +36,47 @@ font-weight: 100;
     background: #000000 !important;
     color: white !important;
 }
+
+/* Toni css */
+  
+    
+
+
+.eggs-float{
+  position: absolute;
+  right:  19%;
+  top: 20%;
+
+
+  color: black;
+  background-color: white;
+  opacity: 90%;
+  padding: 2.6% 4%;
+}
+.eggs-float p{
+  font-family: kepler-std-extended-display, serif;
+  font-weight: 400 !important;
+  font-style: italic;
+  font-size: 1.2vw;
+  letter-spacing: 1px;
+
+  color: rgb(0, 0, 0);
+  text-align: LEFT  ;
+  line-height: 1.3vw;
+  padding-bottom: 2%;
+
+}
+.eggs-float h4{
+  font-family: brother-1816, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: .5px;
+  text-align: LEFT;
+  font-size: 1.1vw;
+}
+
+
+
+
+
+/*  */
