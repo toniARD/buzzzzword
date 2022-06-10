@@ -8,7 +8,7 @@ import {
   useLocation,
 } from "react-router-dom";
 import "./FindTheQueen.css";
-import CAFasdfs from "./PNG/2C.png";
+
 import LogoCard from "./top_card.png";
 import ClickSound from "./card lift.mp3";
 import yas_queen from "./yas_queen-[AudioTrimmer.com].mp3";
@@ -83,9 +83,9 @@ export default function FindTheQueen({ More }) {
     SetVolume(!volume);
     // const element = document.getElementById("dance-video");
   };
-  const images = importAll(
-    require.context("./PNG", false, /\.(png|jpe?g|svg)$/)
-  );
+  // const images = importAll(
+  //   require.context("./PNG", false, /\.(png|jpe?g|svg)$/)
+  // );
   // console.log(Cards);
 
   const generateRandom = async (maxLimit = 100) => {
