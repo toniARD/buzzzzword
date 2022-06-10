@@ -116,7 +116,7 @@ function App(props) {
       )} */}
 
       <Routes>
-        <Route exact path="/" element={<LandingPage More={More} />} />
+        {/* <Route exact path="/" element={<LandingPage More={More} />} />
         <Route
           exact
           path="/LandingPage2"
@@ -151,7 +151,7 @@ function App(props) {
           element={<FindTheQueen More={More} />}
         />
         <Route exact path="/Bear-Attack" element={<BearAttack More={More} />} />
-        <Route exact path="/Radio" element={<Radio More={More} />} />
+        <Route exact path="/Radio" element={<Radio More={More} />} /> */}
       </Routes>
     </div>
   );

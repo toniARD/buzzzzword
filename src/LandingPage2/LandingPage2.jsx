@@ -42,7 +42,7 @@ const LandingPage2 = ({ More }) => {
         <div className="wrapper">
           <p className="date-top">July 2022</p>
           <p className="date-bottom">August 2022 Coming Soon</p>
-          <div className="content">
+          <div className="content red-content">
             <p className="main-para-intro">
               <span>
                 <img src={star} alt="star" />

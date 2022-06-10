@@ -50,7 +50,7 @@ const LandingPage = ({ LayerToggle, More }) => {
           >
             July 2022 Coming Soon
           </p>
-          <div className="content">
+          <div className="content bee-image">
             <p className="main-para-intro">
               <span>
                 <img src={star} alt="star" />
