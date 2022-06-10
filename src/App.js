@@ -72,7 +72,10 @@ function App(props) {
   const More = () => {
     if (location && location.pathname === "/") {
       console.log("We are on Homepage");
-      window.open("http://localhost:3000" + Websites[index], "_blank");
+      window.open(
+        "https://buzzzzword.herokuapp.com/" + Websites[index],
+        "_blank"
+      );
       SetIndex(index + 1);
     } else if (location && location.pathname === "/Bear-Attack") {
       console.log("Last React Website");
