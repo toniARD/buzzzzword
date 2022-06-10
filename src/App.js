@@ -71,9 +71,10 @@ function App(props) {
 
   const More = () => {
     if (location && location.pathname === "/") {
+      SetIndex(0);
       console.log("We are on Homepage");
       window.open(
-        "https://buzzzzword.herokuapp.com/" + Websites[index],
+        "https://buzzzzword.herokuapp.com" + Websites[index],
         "_blank"
       );
       SetIndex(index + 1);
