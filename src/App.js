@@ -29,7 +29,6 @@ import BearAttack from "./BearAttack/BearAttack";
 import Shadows from "./Shadows/Shadows";
 
 const Websites = [
-  "/Error",
   "/Radio",
   "/Flower-Scroll",
   "/Eggs",
@@ -40,6 +39,7 @@ const Websites = [
   "/Zoom",
   "/Dance",
   "/Ultraviolet",
+  "/Error",
   "/Bear-Attack",
 ];
 
@@ -84,7 +84,7 @@ function App(props) {
         "https://buzzzzzword.herokuapp.com/buzzon/index.html",
         "_self"
       );
-    } else if (location && location.pathname === "/Error") {
+    } else if (location && location.pathname === "/Radio") {
       send(Websites[index + 1]);
       SetIndex(index + 2);
     } else {
