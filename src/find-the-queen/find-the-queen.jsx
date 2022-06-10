@@ -19,10 +19,8 @@ const QueenFound = new Audio(yas_queen);
 const Cards = [
   "./PNG/2C.png",
   "./PNG/2D.png",
-
   "./PNG/2S.png",
   "./PNG/3C.png",
-
   "./PNG/3H.png",
   "./PNG/3S.png",
 
@@ -32,39 +30,6 @@ const Cards = [
 
   "./PNG/5D.png",
 
-  "./PNG/5S.png",
-  "./PNG/6C.png",
-
-  "./PNG/6H.png",
-  "./PNG/6S.png",
-  "./PNG/7C.png",
-
-  "./PNG/7H.png",
-
-  "./PNG/8C.png",
-
-  "./PNG/8H.png",
-  "./PNG/8S.png",
-
-  "./PNG/9D.png",
-
-  "./PNG/9S.png",
-  "./PNG/10C.png",
-
-  "./PNG/10H.png",
-  "./PNG/10S.png",
-
-  "./PNG/AD.png",
-
-  "./PNG/AS.png",
-
-  "./PNG/JD.png",
-  "./PNG/JH.png",
-
-  "./PNG/KC.png",
-  "./PNG/KD.png",
-
-  "./PNG/KS.png",
   "./PNG/queen.png",
 ];
 export default function FindTheQueen({ More }) {
@@ -89,7 +54,7 @@ export default function FindTheQueen({ More }) {
   // console.log(Cards);
 
   const generateRandom = async (maxLimit = 100) => {
-    let rand = Math.random() * 31;
+    let rand = Math.random() * 10;
     console.log(rand); // say 99.81321410836433
 
     rand = Math.floor(rand); // 99
@@ -105,7 +70,7 @@ export default function FindTheQueen({ More }) {
   };
 
   useEffect(() => {
-    if (number === 30) {
+    if (number === 9) {
       console.log("Quene found at ", number);
       document.documentElement.style.setProperty("--chess-bg-color", "#ffff00");
       if (volume === true) {

@@ -291,6 +291,9 @@ background-position-x: 45%;
 
 
 }
+.bee-image{
+    background-image:url("./bees.png") !important ;
+}
 /*bee text */
 .landing-page-container.green {
     /* background-image: url("./bees.png") ; */
