@@ -98,6 +98,7 @@
     margin: 0 auto;
     z-index: 100;
     line-height: 1.7vw;
+
 }
 .thin-para span{
 font-style: italic;
@@ -329,6 +330,7 @@ background-position-x: 45%;
     margin: 0 auto;
     z-index: 100;
     line-height: 118%;
+    margin-top: 1vw;
 }
 .long-para-landing-page{
     margin-top:-2%;
