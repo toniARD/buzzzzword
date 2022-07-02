@@ -81,7 +81,7 @@ function App(props) {
     } else if (location && location.pathname === "/Bear-Attack") {
       console.log("Last React Website");
       window.open(
-        "https://buzzzzzword.herokuapp.com/buzzon/index.html",
+        "https://buzzzzzzhtml.herokuapp.com/buzzon/index.html",
         "_self"
       );
     } else if (location && location.pathname === "/Radio") {
