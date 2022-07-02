@@ -66,7 +66,7 @@ const LandingPage = ({ LayerToggle, More }) => {
 
               <p className="thin-para">
                 Welcome to BUZZword
-                <br /> the new age fast moving form of learning.
+                <br /> the newage fast moving form of learning.
               </p>
             </p>
             <p className="long-para-landing-page">

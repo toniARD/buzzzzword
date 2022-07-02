@@ -74,15 +74,15 @@ function App(props) {
       SetIndex(0);
       console.log("We are on Homepage");
       window.open(
-          "https://buzzzzzzword.herokuapp.com" + Websites[index],
-          "_blank"
+        "https://buzzzzword.herokuapp.com" + Websites[index],
+        "_blank"
       );
       SetIndex(index + 1);
     } else if (location && location.pathname === "/Bear-Attack") {
       console.log("Last React Website");
       window.open(
-          "https://buzzzzzzzword.herokuapp.com/buzzon/index.html",
-          "_self"
+        "https://buzzzzzword.herokuapp.com/buzzon/index.html",
+        "_self"
       );
     } else if (location && location.pathname === "/Radio") {
       send(Websites[index + 1]);
@@ -99,8 +99,8 @@ function App(props) {
   };
 
   return (
-      <div className="parentComponent">
-        {/* {(location && location.pathname === "/") ||
+    <div className="parentComponent">
+      {/* {(location && location.pathname === "/") ||
       (location && location.pathname === "/LandingPage2") ? null : (
         <div className="more-btn">MORE!</div>
       )}
@@ -115,45 +115,45 @@ function App(props) {
         <div className="more-btn">MORE!</div>
       )} */}
 
-        <Routes>
-          <Route exact path="/" element={<LandingPage More={More} />} />
-          <Route
-              exact
-              path="/LandingPage2"
-              element={<LandingPage2 More={More} />}
-          />
-          <Route exact path="/InfoLayer" element={<InfoLayer More={More} />} />
-          <Route
-              exact
-              path="/Flower-Scroll"
-              element={<FlowerVideo More={More} />}
-          />
-          <Route exact path="/Egypt" element={<Egypt More={More} />} />
-          <Route exact path="/Eggs" element={<Eggs More={More} />} />
-          <Route exact path="/Zoom" element={<Zoom More={More} />} />
-          <Route exact path="/Error" element={<Error More={More} />} />
-          <Route
-              exact
-              path="/Bouncing-Dvd"
-              element={<BouncingDvd More={More} />}
-          />
-          <Route
-              exact
-              path="/Ultraviolet"
-              element={<Ultraviolet More={More} />}
-          />
-          <Route exact path="/Dance" element={<Dance More={More} />} />
+      <Routes>
+        <Route exact path="/" element={<LandingPage More={More} />} />
+        <Route
+          exact
+          path="/LandingPage2"
+          element={<LandingPage2 More={More} />}
+        />
+        <Route exact path="/InfoLayer" element={<InfoLayer More={More} />} />
+        <Route
+          exact
+          path="/Flower-Scroll"
+          element={<FlowerVideo More={More} />}
+        />
+        <Route exact path="/Egypt" element={<Egypt More={More} />} />
+        <Route exact path="/Eggs" element={<Eggs More={More} />} />
+        <Route exact path="/Zoom" element={<Zoom More={More} />} />
+        <Route exact path="/Error" element={<Error More={More} />} />
+        <Route
+          exact
+          path="/Bouncing-Dvd"
+          element={<BouncingDvd More={More} />}
+        />
+        <Route
+          exact
+          path="/Ultraviolet"
+          element={<Ultraviolet More={More} />}
+        />
+        <Route exact path="/Dance" element={<Dance More={More} />} />
 
-          <Route exact path="/Fly" element={<Fly More={More} />} />
-          <Route
-              exact
-              path="/Find-The-Queen"
-              element={<FindTheQueen More={More} />}
-          />
-          <Route exact path="/Bear-Attack" element={<BearAttack More={More} />} />
-          <Route exact path="/Radio" element={<Radio More={More} />} />
-        </Routes>
-      </div>
+        <Route exact path="/Fly" element={<Fly More={More} />} />
+        <Route
+          exact
+          path="/Find-The-Queen"
+          element={<FindTheQueen More={More} />}
+        />
+        <Route exact path="/Bear-Attack" element={<BearAttack More={More} />} />
+        <Route exact path="/Radio" element={<Radio More={More} />} />
+      </Routes>
+    </div>
   );
 }
 
