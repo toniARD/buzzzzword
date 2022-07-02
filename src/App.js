@@ -74,14 +74,14 @@ function App(props) {
       SetIndex(0);
       console.log("We are on Homepage");
       window.open(
-        "https://buzzzzword.herokuapp.com" + Websites[index],
+        "https://buzzzzzzword.herokuapp.com" + Websites[index],
         "_blank"
       );
       SetIndex(index + 1);
     } else if (location && location.pathname === "/Bear-Attack") {
       console.log("Last React Website");
       window.open(
-        "https://buzzzzzword.herokuapp.com/buzzon/index.html",
+        "https://buzzzzzzzword.herokuapp.com/buzzon/index.html",
         "_self"
       );
     } else if (location && location.pathname === "/Radio") {
