@@ -349,18 +349,4 @@ background-position-x: 45%;
     z-index: 10000000000;
   }
 
-  @media screen and (min-width: 800px) {
-    .main-para-intro .very-bold{
-        font-family: kepler-std-display, serif;
-        font-weight: 600;
-        font-style: italic;
-        line-height: 4.21vw;
-        font-size: 2vw;
-        color: rgb(218, 6, 6);
-        text-align: center;
-        margin: 0 auto;
-        z-index: 100;
-    
-    }
-    
-  }
+  
